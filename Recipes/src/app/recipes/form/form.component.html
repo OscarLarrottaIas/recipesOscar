@@ -1,0 +1,15 @@
+<form class="container" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="string" class="form-control" id="name" aria-describedby="emailHelp" formControlName="name">
+    </div>
+    <div class="mb-3">
+      <label for="prepTimeMinutes" class="form-label">Preparation Time</label>
+      <input type="number" class="form-control" id="prepTimeMinutes "  formControlName="preTime">
+    </div>
+    <div class="mb-3">
+        <label for="cookTimeMinutes" class="form-label">Cook Time</label>
+        <input type="number" class="form-control" id="cookTimeMinutes"  formControlName="cookTime">
+      </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+</form>

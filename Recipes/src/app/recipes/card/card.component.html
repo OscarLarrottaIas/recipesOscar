@@ -1,0 +1,14 @@
+<div class="d-flex" appCard>
+    <p>
+        {{recipe?.name}}
+    </p>
+    <p>
+        {{recipe?.prepTimeMinutes}}
+    </p>
+    <p>
+        {{recipe?.cookTimeMinutes}}
+    </p>
+    <input type="checkbox" id="fav" (change)="fav()">
+    <label for="fav">{{favorite ? 'favorita' : ''}}</label>
+
+</div>

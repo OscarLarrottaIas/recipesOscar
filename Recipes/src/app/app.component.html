@@ -1,0 +1,12 @@
+<h1 class="text-center">{{title}}</h1>
+
+<div class="container d-flex justify-content-around">
+  <a class="btn btn-secondary"  [routerLink]="['/list']" routerLinkActive="router-link-active" >
+    List
+  </a>
+  <a class="btn btn-secondary" [routerLink]="['/form']" routerLinkActive="router-link-active" >
+    form
+  </a>
+</div>
+
+<router-outlet></router-outlet>
